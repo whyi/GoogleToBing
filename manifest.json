@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "GoogleToBing",
   "version": "1.0",
-  "homepage_url": "https://",
+  "homepage_url": "https://github.com/whyi/GoogleToBing",
     "icons": {
         "128": "icons/icon128.png",
         "16": "icons/icon16.png",
@@ -11,7 +11,7 @@
     },
   "applications": {
     "gecko": {
-      "id": "borderify@mozilla.org",
+      "id": "glaze@whyi.net",
       "strict_min_version": "45.0"
     }
   },
