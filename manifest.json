@@ -1,0 +1,38 @@
+{
+  "description": "Switches search engine, with one click",
+  "manifest_version": 2,
+  "name": "GoogleToBing",
+  "version": "1.0",
+  "homepage_url": "https://",
+    "icons": {
+        "128": "icons/icon128.png",
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png"
+    },
+  "applications": {
+    "gecko": {
+      "id": "borderify@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bing.com/*",
+        "*://*.google.com/*"
+      ],
+      "js": [
+        "js/jquery-1.11.2.min.js",
+        "js/jquery-ui.min.js",        
+        "borderify.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+      "icons/icon128.png",
+      "icons/icon16.png",
+      "icons/icon48.png",
+      "icons/b2g.png",
+      "icons/g2b.png"
+  ]
+}
